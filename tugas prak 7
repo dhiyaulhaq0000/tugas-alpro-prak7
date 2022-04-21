@@ -1,0 +1,32 @@
+Dhiya Ulhaq
+24060121140134
+
+program: seqsearch
+{Buatlah program untuk mencari posisi indeks sebuah data dalam sebuah kumpulan (sebanyak n) data dengan menggunakan teknik sequential search.}
+
+Input Banyak Data: 10 
+Input Kumpulan Data: 10 5 8 12 15 22 24 18 25 14
+Input Data yang Dicari: 22
+Hasil Pencarian: Data Ditemukan pada Indeks ke - 5
+
+procedure SEQSearchX1 (input T : TabInt, input N : integer, 
+ output IX : integer, input X : integer) 
+{ Mencari harga X dalam Tabel T [1..N] secara sekuensial mulai dari T1. 
+Hasilnya adalah indeks IX di mana Tix = X (i terkecil) } 
+{ IX = 0 jika tidak ketemu. } 
+
+KAMUS LOKAL
+ i : integer [1..Nmax] { indeks untuk pencarian } 
+ 
+ALGORITMA
+ i ← 1 
+ while (i < N) and (Ti
+≠ X) do
+ i ← i + 1 
+ { i = N or Ti
+ = X } 
+ if (Ti
+ = X) then
+ IX ← i 
+ else { Ti ≠ X } 
+ IX ← 0 
